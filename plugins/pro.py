@@ -99,7 +99,7 @@ async def Pro(bot: AFK, m: Message):
                 )
         except Exception as r:
             LOGS.error(str(r))
-            error_list.append(f"{caption_name}\n")
+            error_list.append(f"{caption_name}"\n)
             try:
                 await Show.delete(True)
             except:
