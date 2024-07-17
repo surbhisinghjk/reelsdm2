@@ -76,13 +76,13 @@ async def Pro(bot: AFK, m: Message):
 
             if os.path.isfile(dl_file) is not None:
                 if dl_file.endswith(".mp4"):
-                    cap = f"{caption_name}.mp4\n\n<b>𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 : </b>{caption}\n\n<b>𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗯𝘆 ➤ </b> **{userr}**"
+                    cap = f"{caption_name}.mp4\n\n<b>𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 : </b>{caption}\n\n<b>𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗯𝘆 ➤ </b> "[😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™]""
                     UL = Upload_to_Tg(bot=bot, m=m, file_path=dl_file, name=caption_name,
                                       Thumb=Thumb, path=sPath, show_msg=Show, caption=cap)
                     await UL.upload_video()
                 else:
                     ext = dl_file.split(".")[-1]
-                    cap = f"{caption_name}.{ext}\n\n<b>𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 : </b>{caption}\n\n<b>𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗯𝘆 ➤ </b> **{userr}**"
+                    cap = f"{caption_name}.{ext}\n\n<b>𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 : </b>{caption}\n\n<b>𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗯𝘆 ➤ </b> "[😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™]""
                     UL = Upload_to_Tg(bot=bot, m=m, file_path=dl_file, name=caption_name,
                                       Thumb=Thumb, path=sPath, show_msg=Show, caption=cap)
                     await UL.upload_doc()
@@ -99,7 +99,7 @@ async def Pro(bot: AFK, m: Message):
                 )
         except Exception as r:
             LOGS.error(str(r))
-            error_list.append(f"{caption_name}"\n)
+            error_list.append(f"{caption_name}")
             try:
                 await Show.delete(True)
             except:
