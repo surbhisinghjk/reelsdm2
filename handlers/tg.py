@@ -166,12 +166,12 @@ class TgClient(TgHandler):
             index = int(user_index.text)
             num = TgClient.index_(index=index)
 
-            msg3 = await self.bot.send_message(
-                self.m.chat.id,
-                text="**Send Caption :-**"
-            )
-            user_caption = await self.bot.listen(self.m.chat.id)
-            caption = user_caption.text
+           # msg3 = await self.bot.send_message(
+             #   self.m.chat.id,
+            #    text="**Send Caption :-**"
+          #  )
+          #  user_caption = await self.bot.listen(self.m.chat.id)
+         #   caption = user_caption.text
             # caption = None
 
             msg4 = await self.bot.send_message(
